@@ -9,6 +9,9 @@ import MainLogo from "./assets/main_logo.svg";
 import Search from "./assets/search.svg";
 import Mode from "./assets/mode.svg";
 import Calendar from "./assets/calendar.svg";
+import OpenBook from "./assets/book-open.svg";
+import DeleteBtn from "./assets/delete.svg";
+import PHP from "./assets/php.png";
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
         search={Search}
         mode={Mode}
         calendar={Calendar}
+        openBook={OpenBook}
+        deleteBtn={DeleteBtn}
+        php={PHP}
       />
     </>
   );
