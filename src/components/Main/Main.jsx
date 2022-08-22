@@ -1,17 +1,14 @@
 import React from "react";
+import Header from "../Header/Header";
+import HeaderMiddle from "../Header/HeaderMiddle";
 
-const Main = ({ main_logo, search, mode }) => {
-    return <>
-        <main className="main">
-            <div className="container-fluid">
-                <div className="main__hero">
-                    <div className="main__logo">
-                        <img src={main_logo} alt="" className="main--logo" />
-                    </div>
-                </div>
-            </div>
-        </main>
-    </>;
+const Main = ({ main_logo, search, mode, calendar }) => {
+  return (
+    <>
+      <Header main_logo={main_logo} search={search} mode={mode} />
+      <HeaderMiddle calendar={calendar} />
+    </>
+  );
 };
 
 export default Main;

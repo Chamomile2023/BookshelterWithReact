@@ -8,12 +8,18 @@ import Lock from "./assets/lock.svg";
 import MainLogo from "./assets/main_logo.svg";
 import Search from "./assets/search.svg";
 import Mode from "./assets/mode.svg";
+import Calendar from "./assets/calendar.svg";
 
 const App = () => {
   return (
     <>
-      <Login logo={Logo} user={User} lock={Lock} />
-      <Main main_logo={MainLogo} search={Search} mode={Mode} />
+      {/* <Login logo={Logo} user={User} lock={Lock} /> */}
+      <Main
+        main_logo={MainLogo}
+        search={Search}
+        mode={Mode}
+        calendar={Calendar}
+      />
     </>
   );
 };
