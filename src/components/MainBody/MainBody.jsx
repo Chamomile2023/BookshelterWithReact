@@ -2,6 +2,8 @@ import React from "react";
 import "./MainBody.scss";
 import Sidebar from "../Sidebar/Sidebar";
 import Aside from "../Aside/Aside";
+import Modal from "../Modal/Modal";
+import Pagination from "../Pagination/Pagination";
 
 const MainBody = ({ openBook, deleteBtn, php }) => {
   return (
@@ -14,6 +16,7 @@ const MainBody = ({ openBook, deleteBtn, php }) => {
             </div>
             <div className="main__aside">
               <Aside php={php} />
+              <Pagination />
             </div>
           </div>
         </div>

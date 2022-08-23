@@ -12,11 +12,13 @@ import Calendar from "./assets/calendar.svg";
 import OpenBook from "./assets/book-open.svg";
 import DeleteBtn from "./assets/delete.svg";
 import PHP from "./assets/php.png";
+import Close from "./assets/close.svg";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      {/* <Login logo={Logo} user={User} lock={Lock} /> */}
+      <Login logo={Logo} user={User} lock={Lock} />
       <Main
         main_logo={MainLogo}
         search={Search}
