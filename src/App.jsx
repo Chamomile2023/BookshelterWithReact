@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import Login from "./components/Login/Login";
 import Main from "./components/Main/Main";
@@ -16,10 +17,28 @@ import Close from "./assets/close.svg";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
+  //useState
+  const [data, setData] = useState([]);
+
+  //API
+  const URL = "https://www.googleapis.com/books/v1/volumes?q=search+terms";
+
+  //fetch
+  const getData = async () => {
+    const request = await fetch(URL);
+    const response = await request.json();
+    setData(response);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <>
-      <Login logo={Logo} user={User} lock={Lock} />
+      {/* <Login logo={Logo} user={User} lock={Lock} /> */}
       <Main
+        data={data}
         main_logo={MainLogo}
         search={Search}
         mode={Mode}

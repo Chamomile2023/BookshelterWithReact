@@ -11,12 +11,18 @@ const Main = ({
   openBook,
   deleteBtn,
   php,
+  data,
 }) => {
   return (
     <>
       <Header main_logo={main_logo} search={search} mode={mode} />
       <HeaderMiddle calendar={calendar} />
-      <MainBody openBook={openBook} deleteBtn={deleteBtn} php={php} />
+      <MainBody
+        openBook={openBook}
+        deleteBtn={deleteBtn}
+        php={php}
+        data={data}
+      />
     </>
   );
 };

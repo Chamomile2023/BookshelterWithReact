@@ -1,5 +1,6 @@
 import React from "react";
-import './Aside.scss'
+import "./Aside.scss";
+import Pagination from "../Pagination/Pagination";
 
 const Aside = ({ php }) => {
     return (
@@ -125,6 +126,9 @@ const Aside = ({ php }) => {
                                     <button className="aside--btn3">Read</button>
                                 </div>
                             </div>
+                        </div>
+                        <div className="aside__pagination">
+                            <Pagination />
                         </div>
                     </div>
                 </div>
